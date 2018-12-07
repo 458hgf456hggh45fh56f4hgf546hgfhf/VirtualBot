@@ -64,7 +64,7 @@ client.on("ready", () => {
 
     console.log("Je suis prêt !");
 
-    client.user.setGame(`#help | Version 0.6`);
+    client.user.setGame(`#help | Version : 0.6`);
 
 
 

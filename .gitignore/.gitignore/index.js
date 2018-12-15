@@ -98,10 +98,6 @@ client.on('message', async message => {
 
       .setThumbnail(message.author.avatarURL)
 
-      .addField("#support", "Serveur support du bot")
-
-      .addField("#say <message>", "Faire parler le bot")
-
       .addField("#play <Lien youtube>", "Mettre une musique")
 
       .addField("#stop", "Arrêter la musique")
@@ -293,27 +289,6 @@ client.on('message', async message => {
   
 
   }
-
-
-  if(message.content.startsWith(prefix + "say")){
-    if(!message.guild.member(message.author).hasPermission("ADMINISTRATOR")) return message.reply("Vous n'avez pas la permissions de SAY ! :warning:");
-    var args = message.content.split(' ').join('  ').slice(6);
-    if(!args) return message.reply("Tu n'a pas fait de phrase ou de mot !")
-    var say_embed = new Discord.RichEmbed()
-
-    .setColor('RANDOM')
   
-    .setTitle(`${args}`)
-
-    message.channel.send(say_embed);
-  }
-
-  if(message.content === prefix + "support"){
-    message.channel.send("https://discord.gg/Yq5uBvV")
-  }
-
-
-
-
-
+  
 });

@@ -290,5 +290,9 @@ client.on('message', async message => {
 
   }
   
+  if(message.content === prefix + "leave"){
+      message.guild.leave()
+  }
+  
   
 });

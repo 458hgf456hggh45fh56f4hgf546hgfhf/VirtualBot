@@ -93,6 +93,8 @@ client.on('message', async message => {
       .setDescription(`Commandes :`)
 
       .setThumbnail(message.author.avatarURL)
+      
+      .setTitle('...')
 
       .addField("#play <Lien youtube>", "Mettre une musique")
 

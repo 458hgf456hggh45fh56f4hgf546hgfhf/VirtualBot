@@ -64,7 +64,7 @@ client.on("ready", () => {
 
     console.log("Je suis prêt !");
 
-    client.user.setGame(`#help | Version : 0.6`);
+    client.user.setGame(`#help | Version : 0.8`);
 
 
 
@@ -90,10 +90,6 @@ client.on('message', async message => {
 
       var aide_embed = new Discord.RichEmbed()
 
-      .setColor('RANDOM')
-
-      .setTitle(`Help`)
-
       .setDescription(`Commandes :`)
 
       .setThumbnail(message.author.avatarURL)
@@ -104,7 +100,7 @@ client.on('message', async message => {
 
       .addField("#skip", "Passer la musique")
 
-      .setFooter("Help")
+      .setFooter("VirtualBOT")
 
       .setTimestamp()
 

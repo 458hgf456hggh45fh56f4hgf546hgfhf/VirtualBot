@@ -89,24 +89,13 @@ client.on('message', async message => {
     if(message.content === prefix + "help") {
 
       var aide_embed = new Discord.RichEmbed()
-
-      .setDescription(`Commandes :`)
-
-      .setThumbnail(message.author.avatarURL)
       
-      .setTitle('...')
+            .setTitle('ALERTE ROUGE ! :')
 
-      .addField("#play <Lien youtube>", "Mettre une musique")
-
-      .addField("#stop", "Arrêter la musique")
-
-      .addField("#skip", "Passer la musique")
-
-      .setFooter("VirtualBOT")
-
-      .setTimestamp()
+      .setDescription("CuBz (LE CREATEUR DE OVERSIGHT) A BESOIN DE VOUS ! CuBz SUR YOUTUBE VAS SE FAIRE DOUBLER PAR AYPIXEL VEUILLEZ VOUS ABONNER EN MASSE A CUBZ POUR QUE IL RESTE A SA PLACE ! AYPIXEL SALOPE !")
 
       message.channel.send(aide_embed);
+	message.channel.send('https://cdn.discordapp.com/attachments/337175141588926467/559012941773406218/Capture.PNG')
 
     }
 
